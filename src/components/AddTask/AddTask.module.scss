@@ -1,0 +1,46 @@
+.addTask{
+   padding:25px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   max-width: 400px;
+   margin: 0 auto;
+   input[type=text]{
+      padding:5px 15px;
+      border-top:0px;
+      border-left:0px;
+      border-right:0px;
+      border-bottom: 2px solid black;
+      font-size:25px;
+     
+      transition: 0.2s ease;
+      &:focus,&:active{
+         outline: none;
+         border-bottom-color:limegreen;
+      }
+   }
+   p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+   }
+   input[type=checkbox]{
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      margin-right: 10px;
+      border-radius: 5px;
+
+   }
+
+}
+.addnewTaskButton{
+   border-radius: 5px;
+   padding:5px 15px;
+   cursor: pointer;
+   width: auto;
+   margin: 0 auto;
+   border:none;
+   background-color: mediumturquoise;
+}

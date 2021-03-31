@@ -1,0 +1,47 @@
+.task{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   max-width: 400px;
+   margin: 0 auto;
+   justify-content: space-between;
+   margin-bottom: 10px;
+}
+.taskName{
+   font-size:20px;
+   font-weight: 500;
+   input{
+      margin-right:10px;
+      width: 25px;
+      height: 25px;
+      background-color: white;
+      border-radius: 50%;
+      vertical-align: middle;
+      border: 1px solid limegreen;
+      -webkit-appearance: none;
+      outline: none;
+      cursor: pointer;
+      &:checked{
+         background-color: limegreen;
+      }
+      
+   }
+   input[class=important]{   
+      @extend input;
+      border: 1px solid red;
+      &:checked{
+         background-color: red;
+      }
+   }
+}
+
+.buttonsWrapper{
+   button{
+      padding:3px 10px;
+      &:nth-child(1){
+         margin-right: 10px;
+
+      }
+
+   }
+}
