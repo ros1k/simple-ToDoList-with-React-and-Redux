@@ -15,6 +15,8 @@ const Task = ({id,task,isImportant,isDone,i}) =>{
    const handleTaskDelete = () =>{
       dispatch(deleteTask(id))
    }
+
+   
    useEffect(() => {
       const newStatus = {
          id:id,

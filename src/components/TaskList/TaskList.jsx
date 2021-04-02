@@ -7,16 +7,11 @@ const TaskList = ({listName,showCurrentTaskList}) =>{
    const tasks = useSelector(state => state.tasks);
 
    
-
+   const post = useSelector(state =>
+      state.tasks.find(element => showCurrentTaskList === element.isDone)
+    )
    
-   const currentTaskList = tasks.map((element,index) => {
-      if(showCurrentTaskList === element.isDone){
-     
-         return (<Task key={element.id} i={1}{...element} />)
-      }
-
-    
-   })
+   console.log(post);
  
 
 {/* return (<Task key={element.id} i={index} {...element} />) */}
@@ -27,8 +22,8 @@ const TaskList = ({listName,showCurrentTaskList}) =>{
             <div className="tasks">
                <h2>{listName}</h2>
                <ul className="tasksList" >
-                   {currentTaskList}
-               
+                   {/* {currentTaskList} */}
+   
                </ul> 
             </div>
           
